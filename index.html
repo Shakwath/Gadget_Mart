@@ -3,9 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Gadget_Mart Assignment 2</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/heroicons@2.1.1/dist/umd/heroicons.min.js"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'primary-blue': '#1D4ED8',
+                        'secondary-gray': '#F3F4F6',
+                    },
+                    boxShadow: {
+                        '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.3)',
+                    }
+                }
+            }
+        }
+    </script>
+   
 </head>
-<body>
-    
+<body class="bg-white text-gray-800">
+<!-- Header Section-->
+ <header class="sticky top-0 z-50 shadow-md bg-white">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16">
+      <!-- Logo -->
+      <div class="flex-shrink-0">
+        <a href="#" class="text-2xl font-bold text-primary-blue hover:text-blue-700 flex items-center">
+          <i data-heroicons-field-name="globe-alt" class="inline-block w-6 h-6 mr-1"></i>
+          Gadget_Mart
+        </a>
+      </div>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-4">
+        <a href="#home" class="text-gray-900 hover:bg-primary-blue hover:text-white active:bg-primary-blue active:text-white focus:outline-none focus:bg-primary-blue focus:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Home</a>
+        <a href="#products" class="text-gray-900 hover:bg-primary-blue hover:text-white active:bg-primary-blue active:text-white focus:outline-none focus:bg-primary-blue focus:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Products</a>
+        <a href="#reviews" class="text-gray-900 hover:bg-primary-blue hover:text-white active:bg-primary-blue active:text-white focus:outline-none focus:bg-primary-blue focus:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Reviews</a>
+        <a href="#contact" class="text-gray-900 hover:bg-primary-blue hover:text-white active:bg-primary-blue active:text-white focus:outline-none focus:bg-primary-blue focus:text-white px-3 py-2 rounded-md text-sm font-medium transition duration-300">Contact</a>
+      </div>
+
+      <!-- Mobile Hamburger + Menu Wrapper -->
+      <div class="md:hidden relative">
+        <!-- Checkbox -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden">
+        <!-- Hamburger Icon -->
+        <label for="menu-toggle" class="cursor-pointer flex flex-col justify-center items-center w-6 h-6 space-y-1">
+          <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300 peer-checked:rotate-45 peer-checked:translate-y-2.5"></span>
+          <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300 peer-checked:opacity-0"></span>
+          <span class="block w-6 h-0.5 bg-gray-800 transition-all duration-300 peer-checked:-rotate-45 peer-checked:-translate-y-2.5"></span>
+        </label>
+
+        <!-- Mobile Menu -->
+        <div class="absolute left-0 w-full top-full hidden peer-checked:block bg-white shadow-md pb-2 space-y-1">
+          <a href="#home" class="block text-gray-900 hover:bg-primary-blue hover:text-white active:bg-primary-blue active:text-white focus:outline-none focus:bg-primary-blue focus:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Home</a>
+          <a href="#products" class="block text-gray-900 hover:bg-primary-blue hover:text-white active:bg-primary-blue active:text-white focus:outline-none focus:bg-primary-blue focus:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Products</a>
+          <a href="#reviews" class="block text-gray-900 hover:bg-primary-blue hover:text-white active:bg-primary-blue active:text-white focus:outline-none focus:bg-primary-blue focus:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Reviews</a>
+          <a href="#contact" class="block text-gray-900 hover:bg-primary-blue hover:text-white active:bg-primary-blue active:text-white focus:outline-none focus:bg-primary-blue focus:text-white px-3 py-2 rounded-md text-base font-medium transition duration-300">Contact</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+
+
+
+
+<!-- Main Section -->
+    <main>
+        
+    </main>
+<!-- Footer Section -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+
+                <div>
+                    <h4 class="text-xl font-bold mb-3 text-primary-blue">Gadget_Mart</h4>
+                     <p>Build Your Gadget With Us !</p>
+                    
+                </div>
+
+                <div>
+                    <h4 class="text-lg font-semibold mb-3">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#home" class="hover:text-white transition duration-200">Home</a></li>
+                        <li><a href="#about" class="hover:text-white transition duration-200">About Us</a></li>
+                        <li><a href="#contact" class="hover:text-white transition duration-200">Contact</a></li>
+                    </ul>
+                </div>
+
+               
+               <div class="social-links-container">
+            <h4 class="text-lg font-semibold mb-3">Connect With Us</h4>
+            <!-- Social Media -->
+            <div class="social-links flex items-center space-x-5">
+                <a href="https://github.com/Shakwath" class="social-link text-gray-700 hover:text-black transition" target="_blank">
+                <!-- GitHub -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 3c0-.7-.58-1.46-1.54-1.57A5.45 5.45 0 0 0 17 2a5.45 5.45 0 0 0-2.37.58c-.96.11-1.54.87-1.54 1.57a5.07 5.07 0 0 0-.09 1.77A5.44 5.44 0 0 0 22 10.77a5.44 5.44 0 0 0-6.44 7.42V21M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"/>
+                </svg>
+                </a>
+
+                <a href="https://x.com/ShakawathH84904" class="social-link text-gray-700 hover:text-sky-500 transition" target="_blank">
+                <!-- Twitter / X -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3.65 10.9 10.9 0 0 1-9-4.7 4.5 4.5 0 0 0-.58 2.22c0 1.5.76 2.82 1.91 3.59a4.37 4.37 0 0 1-2.09-.57v.06a4.5 4.5 0 0 0 3.6 4.44 4.92 4.92 0 0 1-2.22.08c.58 1.83 2.3 3.16 4.34 3.2-1.5 1.17-3.37 1.87-5.41 1.87A9.48 9.48 0 0 1 8 19.16a12.92 12.92 0 0 0 12.91-12.91c0-.2-.01-.4-.03-.6a9.1 9.1 0 0 0 2.24-2.31z"/>
+                </svg>
+                </a>
+
+                <a href="https://www.linkedin.com/in/shakawath-hossain-3a3561300/" class="social-link text-gray-700 hover:text-blue-600 transition" target="_blank">
+                <!-- LinkedIn -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+                </a>
+
+                <a href="https://www.instagram.com/shakawath__/" class="social-link text-gray-700 hover:text-pink-500 transition" target="_blank">
+                <!-- Instagram -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                    <path d="M16 11.37a4 4 0 1 1-7.14-2.88A4 4 0 0 1 16 11.37z"></path>
+                    <line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line>
+                </svg>
+                </a>
+            </div>
+         </div>
+
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-center text-sm text-gray-500">
+                <p class="text-gray-400 text-sm">&copy; 2025 Gadget Mart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
